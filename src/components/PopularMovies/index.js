@@ -40,7 +40,7 @@ const PopularMovies = () => {
 
   const updatedMovieData = data => {
     const moviesDataList = data.results
-    setMaxPages(data.total_pages)
+    setMaxPages(data.length)
 
     const updatedMoviesDataList = moviesDataList.map(eachMovie => ({
       movieId: eachMovie.id,
